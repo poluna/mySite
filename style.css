@@ -330,8 +330,93 @@ h2 {
 }
 
 
+#contact {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(65, 65, 65, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px 70px;
+    padding: 20px;
+    height: 400px;
+}
+
+
+
+.leftside {
+    height: 95%;
+    width: 40%;
+    line-height: 1.6rem;
+    align-self: center;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: rgb(151, 151, 151);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    letter-spacing: 0.7px;
+}
+
+.leftside a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    padding-right: 7px;
+}
+
+.leftside a:hover {
+    color: rgb(197, 197, 197);
+}
+
+.media {
+    margin-top: 10px;
+}
+
+.rightside {
+    align-self: center;
+    height: 95%;
+    width: 60%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.rightside h4{
+    text-align: center;
+    color: rgb(61, 60, 143);
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+
+.form {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid rgb(112, 112, 112);
+    margin: 15px 30px 15px 30px;
+    width: 80%;
+    height:100%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+    
+}
+
 
 .bottom {
     margin-top: 80px;
-    background-color: rgb(87, 87, 87);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(230, 230, 230);
+    font-size: 0.7rem;
+    padding: 12px;
 }
