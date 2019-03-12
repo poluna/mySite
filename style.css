@@ -87,11 +87,11 @@ li {
 
 
 .links {
-    width: 40%;
+    /* width: 40%; */
     align-self: flex-end;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .links .media {
@@ -230,21 +230,23 @@ h3 {
 
 .info {
     min-width: 210px;
-    width: 40%;
+    /* width: 40%; */
     align-self: center;
     line-height: 2rem;
-    border-right: 1px solid rgba(61, 61, 61);
-    padding: 5px;
+    /* border-right: 1px solid rgba(61, 61, 61); */
+    padding: 7px;
     box-sizing: border-box;
     font-size: 1rem;
+    flex: 1 1 20em;
 }
 
 .text {
-    width: 60%;
+    /* width: 60%; */
     line-height: 1.6rem;
     align-self: center;
-    padding: 5px 0 5px 20px;
+    padding: 7px;
     box-sizing: border-box;
+    flex: 2 2 30em;
 }
 
 #skills {
@@ -353,12 +355,17 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(65, 65, 65, 0.1);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
     margin: 70px 70px;
     padding: 20px;
-    height: 400px;
+    /* height: 400px; */
+
 }
 
+#contact h4 {
+    padding-top: 15px;
+}
 
 
 .leftside {
@@ -375,6 +382,8 @@ h2 {
     justify-content: space-between;
     font-size: 0.8rem;
     letter-spacing: 0.7px;
+
+    flex: 1 1 20em;
 }
 
 .leftside a {
@@ -393,14 +402,22 @@ h2 {
 }
 
 .rightside {
-    align-self: center;
-    height: 95%;
+    /* align-self: center; */
+    /* height: 95%; */
     width: 60%;
-    padding: 30px;
+    padding: 10px;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
 
+
+    flex: 1 1 20em;
+
+
+    border-style: solid;
+    border-color: red;
 }
+
+
 
 .rightside h4 {
     text-align: center;
@@ -426,7 +443,7 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-
+    padding-bottom: 15px;
 }
 
 
@@ -455,6 +472,21 @@ h2 {
     .box1 h2 {
         font-size: 24px;
     }
+
+    #aboutme,
+    #skills,
+    #portfolio {
+        margin: 10px 10px;
+    }
+
+    #contact {
+        margin: 40px 10px 20px 10px;
+    }
+
+    .box3 {
+        padding: 0 20px 30px 20px;
+    }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -468,8 +500,10 @@ h2 {
     }
 
     .box1 p {
-            line-height: 17px;
-            font-size: 16px;
-            letter-spacing: 0.02em;
+        line-height: 17px;
+        font-size: 16px;
+        letter-spacing: 0.02em;
     }
+
+
 }
