@@ -1,5 +1,8 @@
 :root {
-    /* zmienne - kolory */
+    --dark-grey: rgb(71, 71, 71);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --almost-white: rgb(230, 230, 230);
 }
 
 * {
@@ -9,7 +12,7 @@
 
 .box {
     height: 500px;
-    background: url(img1.jpg);
+    background: url(images/img1.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -24,7 +27,6 @@
 .box2 {
     background-color: rgba(194, 194, 194, 0.96);
     width: 40%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,7 +49,6 @@ li {
     border-right: none;
 } */
 
-
 .box1 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
@@ -57,7 +58,6 @@ li {
     letter-spacing: 0.02em;
     padding-bottom: 15px;
 }
-
 
 .box1 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,15 +83,9 @@ li {
     font-weight: 600;
 }
 
-
-
-
 .links {
-    /* width: 40%; */
     align-self: flex-end;
     padding: 10px;
-    /* display: flex; */
-    /* flex-direction: column; */
 }
 
 .links .media {
@@ -107,7 +101,7 @@ li {
 }
 
 .links a:hover {
-    color: rgb(71, 71, 71);
+    color: var(--dark-grey);
 }
 
 .links h4 {
@@ -132,11 +126,11 @@ li {
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.3rem;
-    color: rgb(0, 0, 0)
+    color: var(--black);
 }
 
 .navigation a:hover {
-    color: rgb(71, 71, 71);
+    color: var(--dark-grey);
     font-weight: 600;
 }
 
@@ -151,7 +145,7 @@ li {
     border-radius: 50%;
 
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
-    background: url(img2.png);
+    background: url(images/img2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,7 +164,6 @@ li {
     padding-bottom: 20px;
 }
 
-
 .button {
     display: inline-block;
     text-decoration: none;
@@ -186,9 +179,8 @@ li {
 .button1 {
     border: 1px solid rgb(88, 86, 211);
     border-width: 2px;
-
     background: rgb(107, 105, 240);
-    color: rgb(255, 255, 255);
+    color: var(--white);
 }
 
 .button1:hover {
@@ -217,7 +209,6 @@ h3 {
 }
 
 #aboutme {
-
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(65, 65, 65, 0.1);
@@ -225,7 +216,6 @@ h3 {
     flex-wrap: wrap;
     margin: 10px 70px;
     padding: 20px;
-
 }
 
 .info {
@@ -328,13 +318,9 @@ h2 {
 }
 
 #portfolio img {
-    /* height: 260px;
-    align-content: center; */
-
     height: 260px;
-      width: 100%;
-      /* height: 100vh; */
-      object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 .project h4 {
@@ -365,7 +351,6 @@ h2 {
     margin: 70px 70px;
     padding: 20px;
     /* height: 400px; */
-
 }
 
 #contact h4 {
@@ -380,20 +365,23 @@ h2 {
     align-self: center;
     padding: 30px;
     box-sizing: border-box;
-    background-color: rgb(151, 151, 151);
-    color: rgb(255, 255, 255);
+    /* background-image: url("img3.jpg");
+    background-size: cover; */
+    background-color: rgba(127, 110, 153, 0.8);
+    color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 0.8rem;
     letter-spacing: 0.7px;
-
     flex: 1 1 20em;
 }
 
+
+
 .leftside a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     font-size: 1.6rem;
     padding-right: 7px;
 }
@@ -407,17 +395,11 @@ h2 {
 }
 
 .rightside {
-    /* align-self: center; */
-    /* height: 95%; */
     width: 60%;
     padding: 10px;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
-
-
+    background-color: var(--white);
     flex: 1 1 20em;
-
-
 }
 
 
@@ -454,7 +436,7 @@ h2 {
     margin-top: 80px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(230, 230, 230);
+    background-color: var(--almost-white);
     font-size: 0.7rem;
     padding: 12px;
 }
