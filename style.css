@@ -60,7 +60,7 @@ li:last-child {
 }
 
 .box1 {
-    background-color: rgba(244, 244, 244, 0.6);
+    background-color: rgba(244, 244, 244, 0.7);
     width: 50%;
     padding: 5%;
 }
@@ -96,7 +96,7 @@ li:last-child {
     line-height: normal;
     font-size: 32px;
     letter-spacing: 0.02em;
-    padding-bottom: 12px;
+    padding-bottom: 16px;
 }
 
 .box1 p {
@@ -104,7 +104,7 @@ li:last-child {
     font-style: normal;
     font-weight: normal;
     line-height: 25px;
-    font-size: 18px;
+    font-size: 24px;
     letter-spacing: 0.02em;
 }
 
