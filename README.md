@@ -1,4 +1,4 @@
 # mySite 
-Wizytówka stworzona w czasie pierwszego projektu CodersCamp<br><br>
-link: https://poluna.github.io/mySite/ <br><br>
-Źródło obrazów: https://pixabay.com/
+Business card created during first week of CodersCamp 2019.<br><br>
+website: https://poluna.github.io/mySite/ <br><br>
+source of images: https://pixabay.com/
