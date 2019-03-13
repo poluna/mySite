@@ -1,8 +1,6 @@
 :root {
-    --dark-grey: rgb(71, 71, 71);
-    --black: rgb(0, 0, 0);
-    --white: rgb(255, 255, 255);
-    --almost-white: rgb(230, 230, 230);
+    --main-grey: rgba(65, 65, 65, 0.1);
+    --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -50,7 +48,7 @@ li {
 } */
 
 .box1 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -60,7 +58,7 @@ li {
 }
 
 .box1 h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -70,7 +68,7 @@ li {
 }
 
 .box1 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: normal;
     line-height: 25px;
@@ -101,11 +99,11 @@ li {
 }
 
 .links a:hover {
-    color: var(--dark-grey);
+    color: rgb(71, 71, 71);
 }
 
 .links h4 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--main-font);
     font-weight: 300;
     font-size: 1rem;
     padding: 6px 7px;
@@ -126,11 +124,11 @@ li {
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.3rem;
-    color: var(--black);
+    color: rgb(0, 0, 0)
 }
 
 .navigation a:hover {
-    color: var(--dark-grey);
+    color: rgb(71, 71, 71);
     font-weight: 600;
 }
 
@@ -138,12 +136,9 @@ li {
     position: absolute;
     width: 270px;
     height: 270px;
-
     left: 60%;
     transform: translate(-50%, 50%);
-
     border-radius: 50%;
-
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
     background: url(images/img2.png);
     background-position: center;
@@ -152,10 +147,10 @@ li {
 }
 
 .buttons {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--main-font);
     text-align: center;
     padding: 20px 10px 30px 10px;
-    background-color: rgba(65, 65, 65, 0.1);
+    background-color: var(--main-grey);
 }
 
 .buttons h4 {
@@ -175,12 +170,11 @@ li {
     font-size: 0.9rem;
 }
 
-
 .button1 {
     border: 1px solid rgb(88, 86, 211);
     border-width: 2px;
     background: rgb(107, 105, 240);
-    color: var(--white);
+    color: rgb(255, 255, 255);
 }
 
 .button1:hover {
@@ -190,7 +184,6 @@ li {
 .button2 {
     border: 1px solid rgb(105, 105, 105);
     border-width: 2px;
-
     color: rgb(36, 36, 36);
 }
 
@@ -198,20 +191,19 @@ li {
     background: rgb(212, 212, 212);
 }
 
-
 h3 {
     padding-top: 30px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--main-font);
     font-size: 1.6rem;
     font-weight: 600;
     padding-bottom: 20px;
 }
 
-#aboutme {
+.aboutme {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(65, 65, 65, 0.1);
+    font-family: var(--main-font);
+    background-color: var(--main-grey);
     display: flex;
     flex-wrap: wrap;
     margin: 10px 70px;
@@ -220,10 +212,8 @@ h3 {
 
 .info {
     min-width: 210px;
-    /* width: 40%; */
     align-self: center;
     line-height: 2rem;
-    /* border-right: 1px solid rgba(61, 61, 61); */
     padding: 7px;
     box-sizing: border-box;
     font-size: 1rem;
@@ -231,7 +221,6 @@ h3 {
 }
 
 .text {
-    /* width: 60%; */
     line-height: 1.6rem;
     align-self: center;
     padding: 7px;
@@ -239,7 +228,7 @@ h3 {
     flex: 2 2 30em;
 }
 
-#skills {
+.skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     margin: 10px 70px;
@@ -249,7 +238,7 @@ h3 {
 
 .box3 {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-    background-color: rgba(65, 65, 65, 0.1);
+    background-color: var(--main-grey);
     padding: 0 70px 30px 70px;
 }
 
@@ -259,7 +248,7 @@ h3 {
 }
 
 h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--main-font);
     font-weight: 300;
     font-size: 1rem;
 }
@@ -302,8 +291,8 @@ h2 {
     width: 70%;
 }
 
-#portfolio {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.portfolio {
+    font-family: var(--main-font);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin: 10px 70px;
@@ -312,12 +301,12 @@ h2 {
 }
 
 .project {
-    background-color: rgba(65, 65, 65, 0.1);
+    background-color: var(--main-grey);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
 
-#portfolio img {
+.portfolio img {
     height: 260px;
     width: 100%;
     object-fit: cover;
@@ -340,23 +329,20 @@ h2 {
     padding: 7px 7px 14px 10px;
 }
 
-
-#contact {
+.contact {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(65, 65, 65, 0.1);
+    font-family: var(--main-font);
+    background-color: var(--main-grey);
     display: flex;
     flex-wrap: wrap-reverse;
     flex-direction: row;
     margin: 70px 70px;
     padding: 20px;
-    /* height: 400px; */
 }
 
-#contact h4 {
+.contact h4 {
     padding-top: 15px;
 }
-
 
 .leftside {
     height: 95%;
@@ -368,7 +354,7 @@ h2 {
     /* background-image: url("img3.jpg");
     background-size: cover; */
     background-color: rgba(127, 110, 153, 0.8);
-    color: var(--white);
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -377,11 +363,9 @@ h2 {
     flex: 1 1 20em;
 }
 
-
-
 .leftside a {
     text-decoration: none;
-    color: var(--white);
+    color: rgb(255, 255, 255);
     font-size: 1.6rem;
     padding-right: 7px;
 }
@@ -398,11 +382,9 @@ h2 {
     width: 60%;
     padding: 10px;
     box-sizing: border-box;
-    background-color: var(--white);
+    background-color: rgb(255, 255, 255);
     flex: 1 1 20em;
 }
-
-
 
 .rightside h4 {
     text-align: center;
@@ -410,7 +392,6 @@ h2 {
     font-size: 1.6rem;
     margin-bottom: 30px;
 }
-
 
 .form {
     border: 0;
@@ -431,17 +412,17 @@ h2 {
     padding-bottom: 15px;
 }
 
-
 .bottom {
     margin-top: 80px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--almost-white);
+    font-family: var(--main-font);
+    background-color: rgb(230, 230, 230);
     font-size: 0.7rem;
     padding: 12px;
 }
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 1000px) {
 
     .picture {
         width: 200px;
@@ -453,25 +434,23 @@ h2 {
         font-size: 60px;
     }
 
-
     .box1 h2 {
         font-size: 24px;
     }
 
-    #aboutme,
-    #skills,
-    #portfolio {
+    .aboutme,
+    .skills,
+    .portfolio {
         margin: 10px 10px;
     }
 
-    #contact {
+    .contact {
         margin: 40px 10px 20px 10px;
     }
 
     .box3 {
         padding: 0 20px 30px 20px;
     }
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -489,6 +468,4 @@ h2 {
         font-size: 16px;
         letter-spacing: 0.02em;
     }
-
-
 }
