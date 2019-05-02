@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -18,7 +19,7 @@ header {
 
 .navigation {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 5px 10px;
     box-sizing: border-box;
@@ -42,7 +43,7 @@ header {
 
 li {
     list-style-type: none;
-    padding: 10px 10px;
+    padding: 10px 20px;
     border-right: 1px solid rgb(61, 61, 61);
 }
 
@@ -52,7 +53,7 @@ li:last-child {
 
 .box {
     height: 410px;
-    background: url(images/img1.jpg);
+    background: url(images/background.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -86,7 +87,12 @@ li:last-child {
     line-height: normal;
     font-size: 70px;
     letter-spacing: 0.02em;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+    opacity: 0;
+    -webkit-animation: show 1.5s;
+    animation: show 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .box1 h2 {
@@ -97,6 +103,11 @@ li:last-child {
     font-size: 32px;
     letter-spacing: 0.02em;
     padding-bottom: 16px;
+    opacity: 0;
+    -webkit-animation: show 1.5s 1.3s;
+    animation: show 1.5s 1.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .box1 p {
@@ -106,6 +117,21 @@ li:last-child {
     line-height: 25px;
     font-size: 24px;
     letter-spacing: 0.02em;
+    opacity: 0;
+    -webkit-animation: show 1.5s 2.6s;
+    animation: show 1.5s 2.6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .name {
@@ -151,7 +177,7 @@ li:last-child {
     transform: translate(-50%, 30%);
     border-radius: 50%;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
-    background: url(images/img2.png);
+    background: url(images/profile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -203,12 +229,13 @@ li:last-child {
 }
 
 h3 {
-    padding-top: 30px;
     text-align: center;
     font-family: var(--main-font);
     font-size: 1.6rem;
     font-weight: 600;
     padding-bottom: 20px;
+    padding-top: 70px;
+    margin-top: -40px;
 }
 
 .aboutme {
@@ -430,13 +457,12 @@ h2 {
     padding: 12px;
 }
 
-
 @media only screen and (max-width: 1100px) {
 
     .picture {
-        width: 200px;
-        height: 200px;
-        transform: translate(-50%, 70%);
+        width: 180px;
+        height: 180px;
+        transform: translate(-50%, 85%);
     }
 
     .box1 h1 {
@@ -454,7 +480,7 @@ h2 {
     }
 
     .contact {
-        margin: 40px 10px 20px 10px;
+        margin: 5px 10px 20px 10px;
     }
 
     .box3 {
@@ -463,9 +489,13 @@ h2 {
 }
 
 @media only screen and (max-width: 800px) {
-    
+
     .box1 h1 {
         font-size: 32px;
+    }
+
+    li {
+        padding: 10px 10px;
     }
 
     .box1 h2 {
@@ -477,10 +507,14 @@ h2 {
         font-size: 16px;
         letter-spacing: 0.02em;
     }
+
+    .bottom {
+        margin-top: 40px;
+    }
 }
 
 @media only screen and (max-width: 520px) {
-    
+
     .navigation a {
         font-size: 1rem;
     }
@@ -491,7 +525,7 @@ h2 {
 }
 
 @media only screen and (max-width: 410px) {
-    
+
     .navigation a {
         font-size: 0.8rem;
     }
